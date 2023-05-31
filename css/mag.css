@@ -1,0 +1,32 @@
+* {
+    background-color: darkgray;
+}
+ul {
+    list-style: none;
+}
+.input {
+    width: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(188, 185, 185);
+}
+.tovar {
+    width: 20%;
+    display: inline-block;
+}
+.table {
+    width: 40%;
+    margin-left: 10%;
+    text-align: center;
+}
+.button {
+    margin-left: 25%;
+    margin-top: 100px;
+}
+th, td {
+    border: 1px solid rgb(67, 66, 66);
+    background-color: rgb(188, 185, 185);
+}
+.border_none {
+    border: none;
+    background-color: darkgray;
+}

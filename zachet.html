@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/zachet.css">
+    <script src="script/zachet.js" defer></script>
+    <title>Sotrudniki</title>
+</head>
+
+<body>
+    <h1>Лучшие сотрудники ООО "Рога и Копыта"</h1>
+    <table id='table'>
+        <tr>
+            <td onclick='opis(this)'>Иванов Иван Иванович</td>
+            <td class='god_roj'>1980</td>
+            <td>Пекарь</td>
+            <!-- <td onload='vozrast()'></td> -->
+        </tr>
+        <tr>
+            <td onclick='opis(this)'>Петров Пётр Петрович</td>
+            <td class='god_roj'>1970</td>
+            <td>Сантехник</td>
+        </tr>
+        <tr>
+            <td onclick='opis(this)'>Сидоров Сидр Сидорович</td>
+            <td class='god_roj'>1960</td>
+            <td>Водитель</td>
+        </tr>
+        <tr>
+            <td onclick='opis(this)'>Иванов Пётр Сидорович</td>
+            <td class='god_roj'>1990</td>
+            <td>Повар</td>
+        </tr>
+        <tr>
+            <td onclick='opis(this)'>Сидоров Иван Петрович</td>
+            <td class='god_roj'>1985</td>
+            <td>Дворник</td>
+        </tr>
+    </table>
+    <p>Новые сотрудники</p>
+    <ul>
+        <li><label for="input_1" class='label'>ФИО</label><input type="text" id='input_1'></li>
+        <li><label for="input_2" class='label'>Год рождения</label><input type="number" id='input_2'></li>
+        <li><label for="input_3" class='label'>Профессия</label><input type="text" id='input_3'></li>
+        <li><input type="button" value='Добавить' onclick='new_rab()'></li>
+    </ul>
+    <div id='opisanie' onclick='del_opis()'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium provident enim debitis iure,
+        asperiores obcaecati nam quidem. Ipsam possimus, culpa illum tempora quibusdam error laborum, placeat quis
+        deserunt quas expedita.</div>
+</body>
+
+</html>

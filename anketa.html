@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anketa.css">
+    <script defer src="script/anketa.js"></script>
+    <title>Anketa</title>
+</head>
+
+<body>
+    <h1>Перечень каких-то людей:</h1>
+    <form action=''>
+        <p>
+            <label class='label' for='familia'>Фамилия</label>
+            <input type='text' id='familia' required>
+        </p>
+        <p>
+            <label class='label' for='imya'>Имя</label>
+            <input type='text' id='imya' required>
+        </p>
+        <p>
+            <label class='label' for='otche'>Отчество</label>
+            <input type='text' id='otche' required>
+        </p>
+        <p>
+            <label class='label' for='god'>Год рождения</label>
+            <input type='number' id='god' required>
+        </p>
+        <p>
+            <input type='button' value='Добавить' onclick='zapolnenie()'>
+        </p>
+    </form>
+    <table id='my_table'>
+        <tr>
+            <th>ФИО</th>
+            <th>Возраст</th>
+            <th>Статус</th>
+        </tr>
+    </table>
+
+    <h1>Средняя скорость = <span id='avgs'></span></h1>
+    <form action="">
+        <ol class='list'>
+            <li>
+                <label for="dist" class='label'>Длина дистанции</label>
+                <input type="number" id='dist'>
+            </li>
+            <li>
+                <label for="vremya" class='label'>Время на трассе</label>
+                <input type="number" id='vremya'>
+            </li>
+            <li>
+                <input type="button" onclick='velo()' value='сохранить' id='button_1'>
+            </li>
+        </ol>
+    </form>
+    <table id='table_velo'>
+        <tr>
+            <th>Время старта</th>
+            <th>Длина дистанции</th>
+            <th>Время в пути</th>
+        </tr>
+    </table>
+
+</body>
+</html>

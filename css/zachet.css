@@ -1,0 +1,27 @@
+* {
+    text-align: center;
+    background-color: darkcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#table {
+    display: inline-block;
+    margin: auto;
+}
+td {
+    border: 1px solid darkorange;
+    background-color: darkorange;
+}
+.label {
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+}
+#opisanie {
+    display: none;
+}
+/* .god_roj {
+    display: none;
+} */

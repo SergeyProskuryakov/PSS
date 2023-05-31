@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mag.css">
+    <script src="script/mag.js" defer></script>
+    <title>Magazin</title>
+</head>
+<body onload='opisanie()'>
+    <form action="" class='tovar'>
+        <ul>
+            <li>
+                <img src="img/vetka.png" alt="vetka">
+            </li>
+            <li>
+                <input type="number" id='vetka' class='input' value='1'>
+                <label for="vetka"'>шт</label>
+            </li>
+            <li>
+                <input type="button" value='в корзину' onclick='func_vet()'>
+            </li>
+        </ul>
+    </form>
+    <form action="" class='tovar'>
+        <ul>
+            <li>
+                <img src="img/bumajka.png" alt="bumajka">
+            </li>
+            <li>
+                <input type="number" id='bumajka' class='input' value='1'>
+                <label for="bumajka">шт</label>
+            </li>
+            <li>
+                <input type="button" value='в корзину' onclick='func_bum()'>
+            </li>
+        </ul>
+    </form>
+    <form action="" class='tovar'>
+        <ul>
+            <li>
+                <img src="img/tuchka.png" alt="tuchka">
+            </li>
+            <li>
+                <input type="number" id='tuchka' class='input' value='1'>
+                <label for="tuchka">шт</label>
+            </li>
+            <li>
+                <input type="button" value='в корзину' onclick='func_tuch()'>
+            </li>
+        </ul>
+    </form>
+
+    <table class='table'>
+        <tr>
+            <th>товар</th>
+            <th>цена</th>
+            <th>количество</th>
+            <th>сумма</th>
+        </tr>
+        <tr id='tr_vet'>
+            <td>веточка</td>
+            <td id='cena_vet'>5</td>
+            <td id='kol_vet'></td>
+            <td id='sum_vet'></td>
+            <td><input type="button" onclick='del_vet()'></td>
+        </tr>
+        <tr id='tr_bum'>
+            <td>бумажка</td>
+            <td id='cena_bum'>15</td>
+            <td id='kol_bum'></td>
+            <td id='sum_bum'></td>
+            <td><input type="button" onclick='del_bum()'></td>
+        </tr>
+        <tr id='tr_tuch'>
+            <td>тучка</td>
+            <td id='cena_tuch'>57</td>
+            <td id='kol_tuch'></td>
+            <td id='sum_tuch'></td>
+            <td><input type="button" onclick='del_tuch()'></td>
+        </tr>
+        <tr>
+            <td class='border_none'></td>
+            <td class='border_none'></td>
+            <td class='border_none'>итого:</td>
+            <td class='border_none' id='itogo'></td>
+        </tr>
+    </table>
+
+    <form action="index.html" class='button'>
+        <button class="links">на главную</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.zvezda {
+    width: 19%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+}
+form {
+    width: 19%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+.bukva {
+    width: 50%;
+}

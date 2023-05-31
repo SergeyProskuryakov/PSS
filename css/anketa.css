@@ -1,0 +1,20 @@
+* {
+    background-color: darkolivegreen;
+}
+.label {
+    display: inline-block;
+    width: 150px;
+}
+td, th {
+    width: 100px;
+    border: 1px solid black;
+}
+li {
+    margin: 10px;
+}
+#button_1 {
+    background-color: darkgreen;
+}
+.list {
+    list-style: none;
+}

@@ -1,0 +1,87 @@
+* {
+    background-color: darkgray;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#photo1 {
+    width: 150px;
+    height: 150px;
+}
+.monopoly {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: xx-large;
+}
+td {
+    border: 1px solid black;
+    width: 99px;
+    height: 99px;
+    background-color: darkgoldenrod;
+}
+#greenTd {
+    background-color: green;
+}
+.links {
+    width: 150px;
+    height: 35px;
+    margin: 5px;
+    background-color: rgb(72, 96, 85);
+    color: rgb(153, 248, 248);
+}
+ol {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ol > li, ul > li {
+    text-align: left;
+}
+.listnum {
+    list-style: none;
+}
+/* .heizenberg { не работает
+    list-style: url(/img/img.png); 
+}*/
+
+/* ВЕРСИЯ ДЛЯ ПК */
+@media screen and (min-width: 1181px) {   
+    .medium {
+        display: none;
+    }
+    .small {
+        display: none;
+    }
+}
+/* ВЕРСИЯ ДЛЯ ПЛАНШЕТА */
+@media screen and (min-width: 668px) and (max-width: 1180px) {
+    .large {
+        display: none;
+    }
+    .small {
+        display: none;
+    }
+}
+/* ВЕРСИЯ ДЛЯ СМАРТФОНА */
+@media screen and (min-width: 220px) and (max-width: 667px) {
+    .large {
+        display: none;
+    }
+    .medium {
+        display: none;
+    }
+}
+.input_zamena {
+    margin: 10px;
+}
+#button_text {
+    background-color: aqua;
+    font-size: larger;
+    width: 100px;
+    height: 25px;
+}
+#cities {
+    list-style: none;
+}
