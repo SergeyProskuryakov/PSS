@@ -1,50 +1,128 @@
 * {
-    background-color: darkgray;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background-color: #7395AE;
+    color: #EDF5E1;
+    /* text-align: center; */
 }
+
+body {
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #557A95;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #557A95;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5D5C61;
+    background-color: #557A95;
+    transition: .5s;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: #5D5C61;
+    font-size: 16px;
+    background-color: #557A95;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #5D5C61;
+    color: #557A95;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background-color: #557A95;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid #7395AE;
+}
+
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+/* .dis_none {
+    background-color: #557A95;
+    color: #557A95 ;
+}
+
+.dis_none:hover {
+    background-color: #5D5C61;
+    color: #5D5C61;
+} */
+
 #photo1 {
     width: 150px;
     height: 150px;
+    border-radius: 25%;
+    transition: .5s;
 }
-.monopoly {
-    width: 800px;
-    height: 500px;
+
+#photo1:hover {
+    transform: scale(1.05);
+}
+
+.photo1 {
+    display: block;
     margin: auto;
+}
+
+.fio {
+    margin: 10% 10% 0 10%;
     text-align: center;
-    border-collapse: collapse;
-    font-size: xx-large;
 }
-td {
-    border: 1px solid black;
-    width: 99px;
-    height: 99px;
-    background-color: darkgoldenrod;
-}
-#greenTd {
-    background-color: green;
-}
-.links {
-    width: 150px;
-    height: 35px;
-    margin: 5px;
-    background-color: rgb(72, 96, 85);
-    color: rgb(153, 248, 248);
-}
+
 ol {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
 }
+
 ol > li, ul > li {
     text-align: left;
 }
+
 .listnum {
     list-style: none;
 }
-/* .heizenberg { не работает
-    list-style: url(/img/img.png); 
-}*/
 
 /* ВЕРСИЯ ДЛЯ ПК */
 @media screen and (min-width: 1181px) {   
@@ -73,15 +151,74 @@ ol > li, ul > li {
         display: none;
     }
 }
+
 .input_zamena {
     margin: 10px;
 }
+
 #button_text {
     background-color: aqua;
     font-size: larger;
     width: 100px;
     height: 25px;
 }
+
 #cities {
     list-style: none;
+}
+
+/* БЛОК С ТЕКСТОМ */
+.info {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 3%;
+    border: 1px solid #557A95;
+    border-radius: 10px;
+    background-color: #B1A296;
+    width: 75%;
+    box-shadow: 5px 5px 5px #557A95;
+}
+
+.info_txt{
+    background-color: #B1A296;
+}
+
+hr {
+    margin: 20px;
+    border: none;
+    height: 3px;
+    background-color: #5D5C61;
+    color: #5D5C61;
+
+}
+
+/* КНОПКА */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #5D5C61;
+    background-color: #557A95;
+    border: 1px solid #436075;
+    border-radius: 5px;
+    user-select: none;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.buttons:hover {
+    opacity: .8;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttons:focus {
+    opacity: .8;
+    outline: none;
 }
