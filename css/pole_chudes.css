@@ -1,9 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background-color: #2F4454;
+    color: #DA7B93;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+}
+
+/* МЕНЮ */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    /* box-shadow: 0 5px 10px #557A95; */
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA7B93;
+    transition: .5s;
+    background-color: transparent;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: #DA7B93;
+    font-size: 16px;
+    background-color: transparent;
+    display: block;
+    margin: 1px;
+}
+
+header nav ul li a:hover {
+    border: 1px solid #2E151B;
+    margin: 0;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background-color: #557A95;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid #2E151B;
+}
+
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+/* ИНПУТ */
+.input {
+    background-color: #376E6F;
+    border-radius: 5px;
+    border: 1px solid #1C3334;
+    padding: 10px 15px;
+    margin: 10px;
+    width: 50px;
+    font-size: large;
+}
+.input:focus {
+    outline: 1px solid #1C3334;
+}
+
+/* КНОПКА */
+.buttons {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #2E151B;
+    background-color: #1C3334;
+    border: 1px solid #436075;
+    border-radius: 5px;
+    user-select: none;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.buttons:hover {
+    opacity: .8;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttons:focus {
+    opacity: .8;
+    outline: none;
+}
+
+/* ХЗ */
+.zagolovok {
+    margin-top: 10%;
+}
+
+p {
+    margin-bottom: 100px;
+}
+
 .zvezda {
     width: 19%;
     display: inline-block;
     margin: auto;
     text-align: center;
     font-weight: bold;
+    color: #2E151B;
+    font-size: xx-large;
 }
 ul {
     list-style: none;

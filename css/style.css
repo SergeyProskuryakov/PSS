@@ -7,7 +7,6 @@
     text-decoration: none;
     background-color: #7395AE;
     color: #EDF5E1;
-    /* text-align: center; */
 }
 
 body {
@@ -156,13 +155,6 @@ ol > li, ul > li {
     margin: 10px;
 }
 
-#button_text {
-    background-color: aqua;
-    font-size: larger;
-    width: 100px;
-    height: 25px;
-}
-
 #cities {
     list-style: none;
 }
@@ -190,7 +182,6 @@ hr {
     height: 3px;
     background-color: #5D5C61;
     color: #5D5C61;
-
 }
 
 /* КНОПКА */

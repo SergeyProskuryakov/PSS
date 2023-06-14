@@ -4,21 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/goroda.css">
     <script src="script/goroda_avto.js"></script>
     <title>Goroda</title>
 </head>
-<body>
-    <p>подсказка: Рим, Анталия, Анапа</p>
+<body class='center'>
+    <header>
+        <a href="#" class='logo'>LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="goroda_avto.html">Cities</a></li>
+                        <li><a href="adaptive.html">Adaptive</a></li>
+                        <li><a href="mag.html">Shop</a></li>
+                        <li><a href="popit_create.html">Pop-it</a></li>
+                        <li><a href="pole_chudes.html">Поле Чудес</a></li>
+                        <li><a href="anketa.html">Anketa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Technologies</a>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank">CSS</a>
+                            <ul>
+                                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                <li><a href="https://bulma.io/" target="_blank">Bulma</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript"
+                                target="_blank">JavaScript</a>
+                            <ul>
+                                <li><a href="https://jquery-docs.ru/" target="_blank">JQuery</a></li>
+                                <li><a href="https://nodejs.org/ru/docs" target="_blank">Node.js</a></li>
+                                <li><a href="https://gulpjs.com/" target="_blank">Gulp.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.python.org/doc/" target="_blank">Python</a>
+                            <ul>
+                                <li><a href="https://docs.djangoproject.com/en/4.2/" target="_blank">Django</a></li>
+                                <li><a href="https://pythonru.com/osnovy/sqlite-v-python" target="_blank">SQLite3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://github.com/SergeyProskuryakov" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p class='otstup'>подсказка: Рим, Анталия, Анапа</p>
     <input type="text" placeholder='введите город' id='bambam'>
-    <input type="button" onclick='chtenie()' value='отправить'>
+    <input type="button" onclick='chtenie()' value='отправить' class='buttons'>
     <ul id='cities'></ul>
 
-    <hr>
-    <input type="button" class='links' id='carcar' onclick='dobav()' value='dobav'>
+    <hr class='razdelitel'>
+    <input type="button" class='buttons' id='carcar' onclick='dobav()' value='dobav'>
 
     <form action="index.html">
-        <button class="links">На главную</button>
+        <button class="buttons">На главную</button>
     </form>
 </body>
 </html>

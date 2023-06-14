@@ -11,29 +11,74 @@
 </head>
 
 <body>
-    <h1>Перечень каких-то людей:</h1>
-    <form action=''>
+    <header>
+        <a href="#" class='logo'>LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="goroda_avto.html">Cities</a></li>
+                        <li><a href="adaptive.html">Adaptive</a></li>
+                        <li><a href="mag.html">Shop</a></li>
+                        <li><a href="popit_create.html">Pop-it</a></li>
+                        <li><a href="pole_chudes.html">Поле Чудес</a></li>
+                        <li><a href="anketa.html">Anketa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Technologies</a>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank">CSS</a>
+                            <ul>
+                                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                <li><a href="https://bulma.io/" target="_blank">Bulma</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript"
+                                target="_blank">JavaScript</a>
+                            <ul>
+                                <li><a href="https://jquery-docs.ru/" target="_blank">JQuery</a></li>
+                                <li><a href="https://nodejs.org/ru/docs" target="_blank">Node.js</a></li>
+                                <li><a href="https://gulpjs.com/" target="_blank">Gulp.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.python.org/doc/" target="_blank">Python</a>
+                            <ul>
+                                <li><a href="https://docs.djangoproject.com/en/4.2/" target="_blank">Django</a></li>
+                                <li><a href="https://pythonru.com/osnovy/sqlite-v-python" target="_blank">SQLite3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://github.com/SergeyProskuryakov" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class='otstup'>Перечень каких-то людей:</h1>
+    <form action='#'>
         <p>
             <label class='label' for='familia'>Фамилия</label>
-            <input type='text' id='familia' required>
+            <input type='text' id='familia' class='input' value='Иванов' required>
         </p>
         <p>
             <label class='label' for='imya'>Имя</label>
-            <input type='text' id='imya' required>
+            <input type='text' id='imya' class='input' value='Иван' required>
         </p>
         <p>
             <label class='label' for='otche'>Отчество</label>
-            <input type='text' id='otche' required>
+            <input type='text' id='otche' class='input' value='Иванович' required>
         </p>
         <p>
             <label class='label' for='god'>Год рождения</label>
-            <input type='number' id='god' required>
+            <input type='number' id='god' class='input' value='1988' required>
         </p>
         <p>
-            <input type='button' value='Добавить' onclick='zapolnenie()'>
+            <input type='button' value='добавить' class='buttons' onclick='zapolnenie()'>
         </p>
     </form>
-    <table id='my_table'>
+    <table id='my_table' class='table'>
         <tr>
             <th>ФИО</th>
             <th>Возраст</th>
@@ -41,29 +86,35 @@
         </tr>
     </table>
 
-    <h1>Средняя скорость = <span id='avgs'></span></h1>
-    <form action="">
+    <hr class='razdelitel'>
+
+    <h1 class='otstup_mini'>Средняя скорость = <span id='avgs'></span></h1>
+    <form action="#">
         <ol class='list'>
             <li>
                 <label for="dist" class='label'>Длина дистанции</label>
-                <input type="number" id='dist'>
+                <input type="number" class='input' id='dist' value='5'>
             </li>
             <li>
                 <label for="vremya" class='label'>Время на трассе</label>
-                <input type="number" id='vremya'>
+                <input type="number" class='input' id='vremya' value='10'>
             </li>
             <li>
-                <input type="button" onclick='velo()' value='сохранить' id='button_1'>
+                <input type="button" onclick='velo()' value='сохранить' class='buttons' id='button_1'>
             </li>
         </ol>
     </form>
-    <table id='table_velo'>
+    <table id='table_velo' class='table'>
         <tr>
             <th>Время старта</th>
             <th>Длина дистанции</th>
             <th>Время в пути</th>
         </tr>
     </table>
+
+    <hr class='razdelitel'>
+
+
 
 </body>
 </html>

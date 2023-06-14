@@ -9,17 +9,62 @@
     <title>Pole</title>
 </head>
 <body>
-    <h1>загадка на логику</h1>
+    <header>
+        <a href="#" class='logo'>LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="goroda_avto.html">Cities</a></li>
+                        <li><a href="adaptive.html">Adaptive</a></li>
+                        <li><a href="mag.html">Shop</a></li>
+                        <li><a href="popit_create.html">Pop-it</a></li>
+                        <li><a href="pole_chudes.html">Поле Чудес</a></li>
+                        <li><a href="anketa.html">Anketa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Technologies</a>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank">CSS</a>
+                            <ul>
+                                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                <li><a href="https://bulma.io/" target="_blank">Bulma</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript"
+                                target="_blank">JavaScript</a>
+                            <ul>
+                                <li><a href="https://jquery-docs.ru/" target="_blank">JQuery</a></li>
+                                <li><a href="https://nodejs.org/ru/docs" target="_blank">Node.js</a></li>
+                                <li><a href="https://gulpjs.com/" target="_blank">Gulp.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.python.org/doc/" target="_blank">Python</a>
+                            <ul>
+                                <li><a href="https://docs.djangoproject.com/en/4.2/" target="_blank">Django</a></li>
+                                <li><a href="https://pythonru.com/osnovy/sqlite-v-python" target="_blank">SQLite3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://github.com/SergeyProskuryakov" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class='zagolovok'>загадка на логику</h1>
     <p>я загадал слово</p>
     <div class='zvezda' id='zv0'>*</div>
     <div class='zvezda' id='zv1'>*</div>
     <div class='zvezda' id='zv2'>*</div>
     <div class='zvezda' id='zv3'>*</div>
     <div class='zvezda' id='zv4'>*</div>
-    <form action="">
+    <form action="#" class='zagolovok'>
         <ul>
-            <li><input type="text" id='buk'></li>
-            <li><input type="button" id='letter' value='ответ' onclick='proverka()'></li>
+            <li><input type="text" id='buk' class='input'></li>
+            <li><input type="button" id='letter' value='ответ' class='buttons' onclick='proverka()'></li>
         </ul>
     </form>
 </body>

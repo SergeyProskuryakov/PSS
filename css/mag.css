@@ -1,32 +1,158 @@
 * {
-    background-color: darkgray;
-}
-ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
     list-style: none;
+    text-decoration: none;
+    background-color: #272727;
+    color: #EDF5E1;
 }
+
+body {
+    height: 100vh;
+    margin-top: 70px;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px black;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #14A76C;
+    background-color: black;
+    transition: .5s;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: #14A76C;
+    font-size: 16px;
+    background-color: black;
+    display: block;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background-color: black;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid #272727;
+}
+
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
 .input {
-    width: 40px;
+    width: 50px;
+    height: 30px;
     margin-bottom: 10px;
-    background-color: rgb(188, 185, 185);
-}
-.tovar {
-    width: 20%;
+    text-align: center;
+    color: #272727;
+    background-color: #FFE400;
+    border: 1px solid #FF652F;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
     display: inline-block;
 }
+
+.input:focus {
+    outline: 1px solid #14A76C;
+}
+
+.tovar {
+    margin: 10% 10% 0 10%;
+    text-align: center;
+    width: 10%;
+    display: inline-block;
+}
+
 .table {
     width: 40%;
-    margin-left: 10%;
     text-align: center;
+    border-spacing: 5px;
+    margin: auto;
+    margin-top: 5%;
 }
-.button {
-    margin-left: 25%;
-    margin-top: 100px;
-}
+
 th, td {
-    border: 1px solid rgb(67, 66, 66);
-    background-color: rgb(188, 185, 185);
+    border: 1px solid #FF652F;
+    background-color: #FFE400;
+    color: #272727;
+    border-radius: 5px;
 }
+
+.opac:hover {
+    opacity: .8;
+}
+
 .border_none {
     border: none;
-    background-color: darkgray;
+    background-color: #272727;
+    color: #FF652F;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+}
+
+#opisanie_tovara tr td {
+    border: 1px solid #FF652F;
+    margin-top: 80px;
+}
+
+/* КНОПКА */
+.buttons {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #272727;
+    background-color: #FFE400;
+    border: 1px solid #FF652F;
+    border-radius: 5px;
+    user-select: none;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.buttons:hover {
+    opacity: .8;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttons:focus {
+    opacity: .8;
+    outline: none;
 }
